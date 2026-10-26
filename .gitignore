@@ -1,8 +1,0 @@
-MAKESENSE-BD/
-.installer-runtime/
-.workbench-extract-*/
-.local/
-*.download
-__pycache__/
-.DS_Store
-.env*
