@@ -1,0 +1,7 @@
+MAKESENSE-BD/
+.local/
+.workbench-extract-*/
+*.download
+.DS_Store
+__pycache__/
+.env*
