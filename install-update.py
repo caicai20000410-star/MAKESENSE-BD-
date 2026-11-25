@@ -31,13 +31,13 @@ def main():
     destination=BASE/'MAKESENSE-BD-CRM-UPDATE'
     if destination.exists():raise ValueError('MAKESENSE-BD已存在；为保护已有工作台，请移到新的空目录再安装')
     if not sys.stdin.isatty():raise ValueError('请在本机交互终端运行安装器；不会在聊天中索取密码')
-    print('解压密码由提供者线下告知，仅用于解压。新工作台默认仅个人可访问。')
+    print('解压密码由提供者线下告知，仅用于解压。此包只用于已有工作台增量更新，不重新安装。')
     password=getpass.getpass('请输入解压密码（本机输入，不显示）：').encode('utf8')
     with tempfile.TemporaryDirectory(prefix='.workbench-install-',dir=BASE) as tmp:
         extract(archive,Path(tmp),password)
         os.rename(Path(tmp)/'MAKESENSE-BD-CRM-UPDATE',destination)
-    print('解压完成。将以下安装说明交给Codex：\n'+str(destination/'UPDATE.md'))
-    print('安装到使用者账号中的新私人Site；解压器未登录、部署或修改任何站点。')
+    print('解压完成。将以下更新说明交给Codex：\n'+str(destination/'UPDATE.md'))
+    print('按UPDATE.md更新自己的现有工作台；解压器未登录、部署或修改任何站点。')
 
 if __name__=='__main__':
     try:main()
