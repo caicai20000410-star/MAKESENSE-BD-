@@ -1,7 +1,8 @@
 {
-  "version": "2026-11-24",
-  "sourceCommit": "a9cdc932ded72a5daa33d81549e0f9a1a9d0afd8",
-  "archiveSha256": "999bf62aa2978f9e5370b8af87dd11f73f6dc4ba255f6663384325d1db09388a",
+  "version": "2026-11-25-crm-readonly",
+  "sourceCommit": "3c786a6db5c4c9c5fd3dc2ce4a78aa6e33ae5e2c",
+  "archiveSha256": "c2c64de5831385ca8888701f1fcc918ca28f20430ea7dc43795d9be136bfd292",
   "visibility": "owner-private",
-  "passwordDelivery": "offline-provider-only"
+  "passwordDelivery": "offline-provider-only",
+  "crmDuplicateIncluded": true
 }

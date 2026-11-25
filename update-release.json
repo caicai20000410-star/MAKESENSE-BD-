@@ -1,0 +1,7 @@
+{
+  "version": "2026-11-25-crm-readonly",
+  "sourceCommit": "3c786a6db5c4c9c5fd3dc2ce4a78aa6e33ae5e2c",
+  "archiveSha256": "6104cafaada22bf4e2ab837ebd58785d429d5dfc8fe92197f93f787434d0d358",
+  "type": "incremental-readonly-crm",
+  "changesOtherSyncRules": false
+}
